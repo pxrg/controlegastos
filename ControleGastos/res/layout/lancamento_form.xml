@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="vertical"
+                  android:layout_width="fill_parent"
+                  android:layout_height="fill_parent" >
+    
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/titulo" />
+        <EditText
+            android:id="@+id/tituloText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1" />
+    
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/vencimento" />
+        <Button
+            android:id="@+id/vencimentoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            style="?android:attr/buttonBarButtonStyle"
+            android:onClick="dateOnClick" />
+    
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/conta" />
+        <Spinner
+            android:id="@+id/contaSpinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/categoria" />
+        <Spinner
+            android:id="@+id/categoriaSpinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/valor" />
+        <EditText
+            android:id="@+id/valorText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+    
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/observacao" />
+        <EditText
+            android:id="@+id/observacaoText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:lines="2" />
+    
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/situacao" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/situacaoSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/pagamentoText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                style="?android:attr/buttonBarButtonStyle"
+                android:onClick="dateOnClick" />
+        </LinearLayout>
+           
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:orientation="horizontal">
+        
+            <CheckBox
+                android:id="@+id/replicarCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="replicarOnClick"
+                android:text="@string/replicar" />
+            
+            <EditText
+                android:id="@+id/parcelasText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:enabled="false"
+                android:hint="@string/parcelas"
+                android:digits="0123456789"
+                android:inputType="number" />
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text=":" />
+            
+            <EditText
+                android:id="@+id/intervaloText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:hint="@string/parcelas"
+                android:digits="0123456789"
+                android:inputType="number" />
+            
+            <Spinner
+                android:id="@+id/periodoSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp" />
+    
+        </LinearLayout>
+    
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:orientation="horizontal">
+        
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/qnt_intervalo" />
+            
+        </LinearLayout>
+    
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            style="?android:attr/buttonBarStyle"
+            android:orientation="horizontal">
+        
+            <Button
+                android:id="@+id/salvar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="?android:attr/buttonBarButtonStyle"
+                android:onClick="lancamentoOnClick"
+                android:text="@string/salvar" />
+        
+            <Button
+                android:id="@+id/cancelar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="?android:attr/buttonBarButtonStyle"
+                android:onClick="lancamentoOnClick"
+                android:text="@string/cancelar" />
+        
+        </LinearLayout>
+    
+    </LinearLayout>
+</ScrollView>

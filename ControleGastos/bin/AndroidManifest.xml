@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="br.com.controle.principal"
+          android:versionCode="1"
+          android:versionName="1.0">
+    
+    <uses-sdk android:minSdkVersion="11" />
+    
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    
+    <application android:label="@string/app_name" android:icon="@drawable/ic_launcher">
+        <activity android:name="LogonActivity" android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="ContaActivity" android:label="@string/activity_conta" />
+        <activity android:name="ContaListActivity" android:label="@string/activity_conta" />
+        <activity android:name="CategoriaActivity" android:label="@string/activity_categoria" />
+        <activity android:name="CategoriaListActivity" android:label="@string/activity_categoria" />
+        <activity android:name="LancamentoActivity" android:label="@string/activity_lancamento" />
+        <activity android:name="PrincipalActivity" android:label="@string/activity_lancamento" />
+        <activity android:name="TabControleGastos" android:label="@string/app_name" />
+        <service android:name="br.com.controle.notificacao.NotificacaoService" />
+        <receiver android:name="br.com.controle.notificacao.StartUpReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

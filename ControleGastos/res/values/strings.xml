@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Controle de Gastos</string>
+    <string name="activity_conta">Conta</string>
+    <string name="activity_categoria">Categoria</string>
+    <string name="activity_lancamento">Lançamento</string>
+    <string name="primeiro_acesso">Primeiro acesso</string>
+    <string name="aviso">Você possui contas a vencer !</string>
+    <!-- conta -->
+    <string name="banco">Banco</string>
+    <string name="agencia">Agência</string>
+    <string name="numero">Numero</string>
+    <string name="tipo_conta">Tipo</string>
+    <string name="saldo_inicial">Saldo Inicial</string>
+    <string name="saldo_atual">Saldo Atual</string>
+    <!-- categoria  -->
+    <string name="descricao">Descrição</string>
+    <string name="tipo_categoria">Tipo</string>
+    <!-- lancamento -->
+    <string name="titulo">Titulo</string>
+    <string name="vencimento">Vencimento</string>
+    <string name="pagamento">Pagamento</string>
+    <string name="conta">Conta</string>
+    <string name="categoria">Categoria</string>
+    <string name="valor">Valor</string>
+    <string name="observacao">Observação</string>
+    <string name="situacao">Situação</string>
+    <string name="replicar">Replicar</string>
+    <string name="parcelas">0</string>
+    <string name="qnt_intervalo">* Replicar parcelas / intervalo</string>
+    <string name="pagarLancamento">Pagar</string>
+    <!-- commons -->
+    <string name="salvar">Salvar</string>
+    <string name="confirmar">Confirmar</string>
+    <string name="cancelar">Cancelar</string>
+    <!-- errors -->
+    <string name="sucesso_msg">Salvo com sucesso !</string>
+    <string name="error_campos_vazios">Existem campos que não foram preenchidos *</string>
+    <string name="error_password">Senha incorreta !</string>
+    <string name="error_password_confere">Senhas não conferem *</string>
+    <string name="cadastrar_categoria">Cadastre uma categoria antes *</string>
+    <string name="cadastrar_conta">Cadastre uma conta antes *</string>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <style name="layout_button" parent="@android:attr/buttonBarStyle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    
+    <style name="salvar" parent="@android:attr/buttonBarButtonStyle">
+        <item name="android:text">@string/salvar</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="cancelar" parent="@style/salvar">
+        <item name="android:text">@string/cancelar</item>
+    </style>
+    
+    <style name="value_lancamento">
+        <item name="android:textColor">#FFFFFF</item>
+<!--        <item name="android:layout_gravity">center</item>-->
+    </style>
+    
+</resources>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:padding="10dp">
+    
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0,1">
+        <TableRow>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/titulo" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/conta" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/tituloText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/value_lancamento" />
+            <TextView
+                android:id="@+id/contaBancoText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/value_lancamento" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/vencimento" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/categoria" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/vencimentoText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/value_lancamento" />
+            <TextView
+                android:id="@+id/descricaoCategoriaText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/value_lancamento" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/valor" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/situacao" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/valorText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/value_lancamento" />
+            <TextView
+                android:id="@+id/situacaoText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/value_lancamento" />            
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pagamento" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/observacao" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/pagamentoText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/value_lancamento" />
+            <TextView
+                android:id="@+id/observacaoText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/value_lancamento" />
+        </TableRow>
+        <Button
+            android:id="@+id/pagarButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/value_lancamento"
+            android:text="@string/pagarLancamento" />
+    </TableLayout>
+</LinearLayout>

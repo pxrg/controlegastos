@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent" >
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/banco" />
+    <EditText
+        android:id="@+id/bancoText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/agencia" />
+    <EditText
+        android:id="@+id/agenciaText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:digits="-0123456789"
+        android:inputType="numberDecimal" />
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/numero" />
+    <EditText
+        android:id="@+id/numeroContaText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:digits="-.0123456789"
+        android:inputType="numberDecimal" />
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tipo_conta" />
+    <Spinner
+        android:id="@+id/tipoContaSpinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/saldo_inicial" />
+    <EditText
+        android:id="@+id/saldoInicialText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal" />
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/saldo_atual" />
+    <EditText
+        android:id="@+id/saldoAtualText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:inputType="number" />
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        style="?android:attr/buttonBarStyle"
+        android:orientation="horizontal">
+        
+        <Button
+            android:id="@+id/salvar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="?android:attr/buttonBarButtonStyle"
+            android:onClick="contaOnClick"
+            android:text="@string/salvar" />
+        
+        <Button
+            android:id="@+id/cancelar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="?android:attr/buttonBarButtonStyle"
+            android:onClick="contaOnClick"
+            android:text="@string/cancelar" />
+        
+    </LinearLayout>
+    
+</LinearLayout>
+
